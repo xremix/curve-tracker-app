@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curve Tracker - The ultimate motorcycle curve tracking app. Improve your riding skills with precise curve analysis, lean angle measurement, and performance tracking. Become a more confident and secure rider with detailed feedback on your technique.">
+    <title>Curve Tracker - Motorcycle Curve Tracking App</title>
+    
+    <!-- SEO Language Tags -->
+    <!-- <link rel="alternate" hreflang="en" href="https://yourdomain.com/?lang=en" />
+    <link rel="alternate" hreflang="de" href="https://yourdomain.com/?lang=de" />
+    <link rel="alternate" hreflang="x-default" href="https://yourdomain.com/" /> -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Language Switcher -->
+    <div class="language-switcher">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="de">DE</button>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">Curve Tracker</div>
+            <ul class="nav-links">
+                <li><a href="#features" data-translate="nav.features">Features</a></li>
+                <li><a href="#testimonials" data-translate="nav.testimonials">Testimonials</a></li>
+                <li><a href="https://apps.apple.com/de/app/curve-tracker-f%C3%BCrs-motorrad/id1579524063" target="_blank" data-translate="nav.download">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 data-translate="hero.title">Become a Better Motorcycle Rider</h1>
+                <p data-translate="hero.subtitle">Improve your riding skills and become a more secure driver with Curve Tracker. Get precise feedback on your curve technique and bike handling to build confidence and trust in your abilities.</p>
+                <div class="cta-buttons">
+                    <a href="https://apps.apple.com/de/app/curve-tracker-f%C3%BCrs-motorrad/id1579524063" class="btn btn-primary" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        <span data-translate="hero.download">Download on App Store</span>
+                    </a>
+                    <a href="#features" class="btn btn-secondary" data-translate="hero.learn">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-screenshot">
+                <img src="screenshots/heroscreenshot.png" alt="Curve Tracker App Screenshot">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-translate="features.title">Why Choose Curve Tracker?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12,6 12,12 16,14"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="features.measurement.title">Precise Curve Measurement</h3>
+                    <p data-translate="features.measurement.desc">Measure the exact angle of each curve using smartphone sensors for unparalleled accuracy, unlike GPS triangulation used by other apps.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0 0 21 18.382V7.618a1 1 0 0 0-1.447-.894L15 4m0 13V4m-6 3l6-3"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="features.analysis.title">Detailed Curve Analysis</h3>
+                    <p data-translate="features.analysis.desc">See exact details of each curve with very detailed analysis to help you become a better rider and gain more trust in your bike and tires.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10"/>
+                            <line x1="12" y1="20" x2="12" y2="4"/>
+                            <line x1="6" y1="20" x2="6" y2="14"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="features.performance.title">Performance Tracking</h3>
+                    <p data-translate="features.performance.desc">See how good you are when doing curves and track your acceleration from 0-100kmh with comprehensive performance metrics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="features.training.title">Bike Training Support</h3>
+                    <p data-translate="features.training.desc">Get personalized training insights and improve your riding skills with detailed feedback on your curve technique and bike handling.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0 0 21 18.382V7.618a1 1 0 0 0-1.447-.894L15 4m0 13V4m-6 3l6-3"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="features.tracking.title">Track Recording</h3>
+                    <p data-translate="features.tracking.desc">Track your entire route with precision and get comprehensive data about your riding performance and curve execution.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 data-translate="features.support.title">Personal Support</h3>
+                    <p data-translate="features.support.desc">Get very personal and fast service from our dedicated support team, ensuring you get the most out of your riding experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Preview Section -->
+    <section id="preview" class="app-preview">
+        <div class="container">
+            <div class="preview-content">
+                <div class="preview-text">
+                    <h2 data-translate="preview.title">Master Your Riding Skills</h2>
+                    <p data-translate="preview.subtitle">Curve Tracker helps you become a more confident and secure rider through precise curve analysis and personalized training feedback. Understand your bike's behavior and improve your technique with every ride.</p>
+                    <div class="cta-buttons">
+                        <a href="https://apps.apple.com/de/app/curve-tracker-f%C3%BCrs-motorrad/id1579524063" class="btn btn-primary" target="_blank" data-translate="preview.cta">Get Started Today</a>
+                    </div>
+                </div>
+                <div class="app-mockup">
+                    <div class="screenshot-slide active" id="slide1">
+                        <h3 class="screenshot-title">Track your rides</h3>
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="screenshots/heroscreenshot.png" alt="Curve Tracker App Screenshot" class="phone-screen-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-slide" id="slide3">
+                        <h3 class="screenshot-title">Curve analysis & insights</h3>
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="screenshots/screenshot-curve-details.png" alt="Curve Tracker App Screenshot" class="phone-screen-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-slide" id="slide4">
+                        <h3 class="screenshot-title">Performance overview</h3>
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="screenshots/screenshot-curves-overview.png" alt="Curve Tracker App Screenshot" class="phone-screen-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-slide" id="slide6">
+                        <h3 class="screenshot-title">Your trip in numbers</h3>
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="screenshots/screenshot-trip-kpis.png" alt="Curve Tracker App Screenshot" class="phone-screen-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="screenshot-slide" id="slide5">
+                        <h3 class="screenshot-title">Do you know your limits?</h3>
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <img src="screenshots/screenshot-limits.png" alt="Curve Tracker App Screenshot" class="phone-screen-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-translate="testimonials.title">What Our Users Say</h2>
+            <p class="section-subtitle" data-translate="testimonials.subtitle">The most popular curve tracker for iOS among motorcyclists with a large community in Germany, Austria, and Switzerland</p>
+            
+            <div class="achievement-kpi">
+                <div class="achievement-content">
+                    <div class="achievement-rank">#2</div>
+                    <div class="achievement-title">
+                        <div class="achievement-title-main" data-translate="testimonials.achievement.title">Navigation Apps</div>
+                        <div class="achievement-title-sub" data-translate="testimonials.achievement.subtitle">German Paid Apps - August 2025</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <h3 class="testimonial-title" data-translate="testimonials.card1.title">The Best Lean Angle Motorbike App</h3>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text" data-translate="testimonials.card1.text">"Hi, I have been using this app for awhile now and must say it is simply the best lean angle app for a motorbike, Toni is great to talk to and listens to you when you have a request or require any information about the app, I better not say about any future updates but it will be worth the wait, again a very helpful app to use while riding."</p>
+                    <div class="testimonial-author">- Steve, Australia</div>
+                </div>
+                <div class="testimonial-card">
+                    <h3 class="testimonial-title" data-translate="testimonials.card2.title">Geniales Meisterwerk</h3>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text" data-translate="testimonials.card2.text">"Die App ist super macht was man erwartet und funktioniert einwandfrei."</p>
+                    <div class="testimonial-author">- Eleon, Deutschland</div>
+                </div>
+                <div class="testimonial-card">
+                    <h3 class="testimonial-title" data-translate="testimonials.card3.title">Sehr gute App</h3>
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text" data-translate="testimonials.card3.text">"Tolle App für Motorradfahrer! Übersichtlich, praktisch und genau das, was man für kurvenreiche Touren braucht. Läuft stabil und liefert verlässliche Ergebnisse aus meiner Sicht. Geschwindigkeit und Schräglage in der Kurve wird aufgezeichnet. Echt Toll Gemacht!!!"</p>
+                    <div class="testimonial-author">- Chris, Deutschland</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 data-translate="download.title">Ready to Improve Your Riding?</h2>
+            <p data-translate="download.subtitle">Join thousands of motorcyclists who use Curve Tracker to become better, more secure riders. Download now and start your journey to mastering motorcycle curves.</p>
+            <div class="cta-buttons">
+                <a href="https://apps.apple.com/de/app/curve-tracker-f%C3%BCrs-motorrad/id1579524063" class="btn btn-primary" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                    </svg>
+                    <span data-translate="download.cta">Download on App Store</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- More Apps Section -->
+    <section class="more-apps">
+        <div class="container">
+            <div class="more-apps-content">
+                <h3 data-translate="more-apps.title">Got interested and want to see more apps?</h3>
+                <p data-translate="more-apps.subtitle">Discover more apps by Toni Hoffmann</p>
+                <a href="https://www.toni-hoffmann.com/apps/" class="btn btn-secondary" target="_blank" data-translate="more-apps.cta">Explore More Apps</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Curve Tracker</div>
+                <ul class="footer-links">
+                    <li><a href="#features" data-translate="footer.features">Features</a></li>
+                    <li><a href="https://apps.apple.com/de/app/curve-tracker-f%C3%BCrs-motorrad/id1579524063" target="_blank" data-translate="footer.download">Download</a></li>
+                    <li><a href="https://www.toni-hoffmann.com/data-privacy/" target="_blank" data-translate="footer.privacy">Privacy Policy</a></li>
+                    <li><a href="https://www.toni-hoffmann.com/imprint/" target="_blank" data-translate="footer.imprint">Imprint</a></li>
+                </ul>
+            </div>
+            <p style="margin-top: 1rem; opacity: 0.7;">© 2025 Curve Tracker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Translation data
+        const translations = {
+            en: {
+                // Navigation
+                'nav.features': 'Features',
+                'nav.testimonials': 'Testimonials',
+                'nav.download': 'Download',
+                
+                // Hero Section
+                'hero.title': 'Become a Better Motorcycle Rider',
+                'hero.subtitle': 'Improve your riding skills and become a more secure driver with Curve Tracker. Get precise feedback on your curve technique and bike handling to build confidence and trust in your abilities.',
+                // Testimonials Achievement
+                'testimonials.achievement.title': 'Navigation Apps',
+                'testimonials.achievement.subtitle': 'German Paid Apps - August 2025',
+                
+                // More Apps Section
+                'more-apps.title': 'Got interested and want to see more apps?',
+                'more-apps.subtitle': 'Discover more apps by Toni Hoffmann',
+                'more-apps.cta': 'Explore More Apps',
+                'hero.download': 'Download on App Store',
+                'hero.learn': 'Learn More',
+                
+                // Features Section
+                'features.title': 'Why Choose Curve Tracker?',
+                'features.measurement.title': 'Precise Curve Measurement',
+                'features.measurement.desc': 'Measure the exact angle of each curve using smartphone sensors for unparalleled accuracy, unlike GPS triangulation used by other apps.',
+                'features.analysis.title': 'Detailed Curve Analysis',
+                'features.analysis.desc': 'See exact details of each curve with very detailed analysis to help you become a better rider and gain more trust in your bike and tires.',
+                'features.performance.title': 'Performance Tracking',
+                'features.performance.desc': 'See how good you are when doing curves and track your acceleration from 0-100kmh with comprehensive performance metrics.',
+                'features.training.title': 'Bike Training Support',
+                'features.training.desc': 'Get personalized training insights and improve your riding skills with detailed feedback on your curve technique and bike handling.',
+                'features.tracking.title': 'Track Recording',
+                'features.tracking.desc': 'Track your entire route with precision and get comprehensive data about your riding performance and curve execution.',
+                'features.support.title': 'Personal Support',
+                'features.support.desc': 'Get very personal and fast service from our dedicated support team, ensuring you get the most out of your riding experience.',
+                
+                // Preview Section
+                'preview.title': 'Master Your Riding Skills',
+                'preview.subtitle': 'Curve Tracker helps you become a more confident and secure rider through precise curve analysis and personalized training feedback. Understand your bike\'s behavior and improve your technique with every ride.',
+                'preview.cta': 'Get Started Today',
+                
+                // Testimonials
+                'testimonials.title': 'What Our Users Say',
+                'testimonials.subtitle': 'The most popular curve tracker for iOS among motorcyclists with a large community in Germany, Austria, and Switzerland',
+                'testimonials.card1.title': 'The Best Lean Angle Motorbike App',
+                'testimonials.card1.text': '"Hi, I have been using this app for awhile now and must say it is simply the best lean angle app for a motorbike, Toni is great to talk to and listens to you when you have a request or require any information about the app, I better not say about any future updates but it will be worth the wait, again a very helpful app to use while riding."',
+                'testimonials.card2.title': 'Geniales Meisterwerk',
+                'testimonials.card2.text': '"Die App ist super macht was man erwartet und funktioniert einwandfrei."',
+                'testimonials.card3.title': 'Sehr gute App',
+                'testimonials.card3.text': '"Tolle App für Motorradfahrer! Übersichtlich, praktisch und genau das, was man für kurvenreiche Touren braucht. Läuft stabil und liefert verlässliche Ergebnisse aus meiner Sicht. Geschwindigkeit und Schräglage in der Kurve wird aufgezeichnet. Echt Toll Gemacht!!!"',
+                
+                // Download Section
+                'download.title': 'Ready to Improve Your Riding?',
+                'download.subtitle': 'Join thousands of motorcyclists who use Curve Tracker to become better, more secure riders. Download now and start your journey to mastering motorcycle curves.',
+                'download.cta': 'Download on App Store',
+                
+                // Footer
+                'footer.features': 'Features',
+                'footer.download': 'Download',
+                'footer.privacy': 'Privacy Policy',
+                'footer.imprint': 'Imprint'
+            },
+            de: {
+                // Navigation
+                'nav.features': 'Funktionen',
+                'nav.testimonials': 'Bewertungen',
+                'nav.download': 'Herunterladen',
+                
+                // Hero Section
+                'hero.title': 'Werde ein besserer Motorradfahrer',
+                'hero.subtitle': 'Verbessere deine Fahrkünste und werde ein sichererer Fahrer mit Curve Tracker. Erhalte präzises Feedback zu deiner Kurventechnik und Fahrzeugbeherrschung, um Vertrauen und Sicherheit aufzubauen.',
+                // Testimonials Achievement
+                'testimonials.achievement.title': 'Navigations Apps',
+                'testimonials.achievement.subtitle': 'Deutsche bezahlte Apps - August 2025',
+                
+                // More Apps Section
+                'more-apps.title': 'Interessiert und möchtest mehr Apps sehen?',
+                'more-apps.subtitle': 'Entdecke weitere Apps von Toni Hoffmann',
+                'more-apps.cta': 'Mehr Apps entdecken',
+                'hero.download': 'Im App Store herunterladen',
+                'hero.learn': 'Mehr erfahren',
+                
+                // Features Section
+                'features.title': 'Warum Curve Tracker wählen?',
+                'features.measurement.title': 'Präzise Kurvenmessung',
+                'features.measurement.desc': 'Messe den exakten Winkel jeder Kurve mit Smartphone-Sensoren für unerreichte Genauigkeit, anders als GPS-Triangulation bei anderen Apps.',
+                'features.analysis.title': 'Detaillierte Kurvenanalyse',
+                'features.analysis.desc': 'Sieh genaue Details jeder Kurve mit sehr detaillierter Analyse, um ein besserer Fahrer zu werden und mehr Vertrauen in dein Motorrad und Reifen zu gewinnen.',
+                'features.performance.title': 'Leistungsverfolgung',
+                'features.performance.desc': 'Sieh wie gut du in Kurven bist und verfolge deine Beschleunigung von 0-100kmh mit umfassenden Leistungsmetriken.',
+                'features.training.title': 'Fahrzeugtraining-Unterstützung',
+                'features.training.desc': 'Erhalte personalisierte Trainingserkenntnisse und verbessere deine Fahrkünste mit detailliertem Feedback zu deiner Kurventechnik und Fahrzeugbeherrschung.',
+                'features.tracking.title': 'Streckenaufzeichnung',
+                'features.tracking.desc': 'Verfolge deine gesamte Route mit Präzision und erhalte umfassende Daten über deine Fahrleistung und Kurvenausführung.',
+                'features.support.title': 'Persönlicher Support',
+                'features.support.desc': 'Erhalte sehr persönlichen und schnellen Service von unserem engagierten Support-Team und stelle sicher, dass du das Beste aus deiner Fahrerfahrung herausholst.',
+                
+                // Preview Section
+                'preview.title': 'Meistere deine Fahrkünste',
+                'preview.subtitle': 'Curve Tracker hilft dir, ein selbstbewussterer und sicherer Fahrer zu werden durch präzise Kurvenanalyse und individuelles Feedback. Verstehe das Verhalten deines Motorrads und verbessere deine Technik bei jeder Fahrt.',
+                'preview.cta': 'Jetzt starten',
+                
+                // Testimonials
+                'testimonials.title': 'Was unsere Nutzer sagen',
+                'testimonials.subtitle': 'Der beliebteste Kurven-Tracker für iOS unter Motorradfahrern mit einer großen Community in Deutschland, Österreich und der Schweiz',
+                'testimonials.card1.title': 'Die beste Schräglagen-Motorrad-App',
+                'testimonials.card1.text': '"Hallo, ich benutze diese App schon eine Weile und muss sagen, dass sie einfach die beste Schräglagen-App für ein Motorrad ist. Toni ist großartig zu sprechen und hört dir zu, wenn du eine Anfrage hast oder Informationen über die App benötigst. Ich sollte nichts über zukünftige Updates sagen, aber es wird das Warten wert sein. Wieder eine sehr hilfreiche App zum Fahren."',
+                'testimonials.card2.title': 'Geniales Meisterwerk',
+                'testimonials.card2.text': '"Die App ist super macht was man erwartet und funktioniert einwandfrei."',
+                'testimonials.card3.title': 'Sehr gute App',
+                'testimonials.card3.text': '"Tolle App für Motorradfahrer! Übersichtlich, praktisch und genau das, was man für kurvenreiche Touren braucht. Läuft stabil und liefert verlässliche Ergebnisse aus meiner Sicht. Geschwindigkeit und Schräglage in der Kurve wird aufgezeichnet. Echt Toll Gemacht!!!"',
+                
+                // Download Section
+                'download.title': 'Bereit, ein besserer Fahrer zu werden?',
+                'download.subtitle': 'Schließe dich Tausenden von Motorradfahrern an, die mit Curve Tracker bessere und sicherere Fahrer werden. Lade jetzt herunter und werde zum Kurvenprofi.',
+                'download.cta': 'Im App Store herunterladen',
+                
+                // Footer
+                'footer.features': 'Funktionen',
+                'footer.download': 'Herunterladen',
+                'footer.privacy': 'Datenschutz',
+                'footer.imprint': 'Impressum'
+            }
+        };
+
+        // Language switching functionality
+        let currentLang = 'en';
+
+        // Get language from URL parameter or localStorage
+        function getInitialLanguage() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const langParam = urlParams.get('lang');
+            const savedLang = localStorage.getItem('curve-tracker-lang');
+            
+            if (langParam && (langParam === 'en' || langParam === 'de')) {
+                return langParam;
+            } else if (savedLang && (savedLang === 'en' || savedLang === 'de')) {
+                return savedLang;
+            }
+            
+            // Default to browser language or English
+            const browserLang = navigator.language.split('-')[0];
+            return browserLang === 'de' ? 'de' : 'en';
+        }
+
+        // Update URL with language parameter
+        function updateURL(lang) {
+            const url = new URL(window.location);
+            url.searchParams.set('lang', lang);
+            window.history.replaceState({}, '', url);
+        }
+
+        // Translate the page
+        function translatePage(lang) {
+            currentLang = lang;
+            localStorage.setItem('curve-tracker-lang', lang);
+            updateURL(lang);
+            
+            // Update document language
+            document.documentElement.lang = lang;
+            
+            // Update language switcher
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.dataset.lang === lang) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Translate all elements with data-translate attribute
+            document.querySelectorAll('[data-translate]').forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+            
+            // Update page title
+            const title = lang === 'de' ? 'Curve Tracker - Motorrad Kurven Tracking App' : 'Curve Tracker - Motorcycle Curve Tracking App';
+            document.title = title;
+        }
+
+
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Screenshot slideshow functionality
+        function initScreenshotSlideshow() {
+            const slides = document.querySelectorAll('.screenshot-slide');
+            let currentIndex = 0;
+            
+            function nextSlide() {
+                // Remove active class from current slide
+                slides[currentIndex].classList.remove('active');
+                
+                // Move to next slide
+                currentIndex = (currentIndex + 1) % slides.length;
+                
+                // Add active class to new slide
+                slides[currentIndex].classList.add('active');
+            }
+            
+            // Start the slideshow
+            setInterval(nextSlide, 5000);
+        }
+
+        // Initialize slideshow when DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            const initialLang = getInitialLanguage();
+            translatePage(initialLang);
+            
+            // Add event listeners to language switcher
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const lang = this.dataset.lang;
+                    translatePage(lang);
+                });
+            });
+            
+            // Initialize screenshot slideshow
+            initScreenshotSlideshow();
+        });
+    </script>
+</body>
+</html>
